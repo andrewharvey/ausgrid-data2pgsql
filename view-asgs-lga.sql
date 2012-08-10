@@ -5,5 +5,5 @@ CREATE OR REPLACE VIEW ausgrid.asgs_2011_nsw_lga AS (
     asgs_2011.shorten_lga_name(l.name) as short_name,
     s.name as state
   FROM asgs_2011.lga l
-  JOIN asgs_2011.state s ON l.state = s.code
+  JOIN asgs_2011.ste s ON l.state = s.code
   WHERE (s.name = 'New South Wales'));
